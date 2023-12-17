@@ -5,18 +5,82 @@
   padding: 0;
   margin: 0;
 }
+.normal {
+  background-color: #c3b59b;
+}
+.fire {
+  background-color: #f7941f;
+}
+.fighting {
+  background-color: #bc1e2c;
+}
+.water {
+  background-color: #00aeed;
+}
+.flying {
+  background-color: #c2b7d9;
+}
+.grass {
+  background-color: #35b44b;
+}
+.poison {
+  background-color: #91288d;
+}
+.electric {
+  background-color: #faeb30;
+}
+.ground {
+  background-color: #ffcc69;
+}
+.psychic {
+  background-color: #ec2b7a;
+}
+.rock {
+  background-color: #c39a6e;
+}
+.ice {
+  background-color: #a3dcf7;
+}
+.bug {
+  background-color: #aacf4e;
+}
+.dragon {
+  background-color: #4d2f8f;
+}
+.ghost {
+  background-color: #877299;
+}
+.dark {
+  background-color: #3e2417;
+}
+.steel {
+  background-color: #a1abb4;
+}
+.fairy {
+  background-color: #f392bd;
+}
+.cell {
+  background-color: #68afa9;
+}
+.cyber {
+  background-color: #3956a4;
+}
+
+
+
+
 
 .pokemon {
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
   padding: 2rem 1rem;
-  background-color: #49d0b0;
   color: #fff;
   border-radius: 1rem;
 }
 
 .pokemon .name {
+  text-transform: capitalize;
   color: #fff;
   margin-bottom: 0;
 }
@@ -25,7 +89,7 @@
   color: black;
   opacity: 0.3;
   text-align: right;
-  font-size: 0.325rem;
+  font-size: 0.525rem;
 }
 .pokemon .detail {
   display: flex;
@@ -40,7 +104,7 @@
   list-style: none;
 }
 .pokemon .detail .types .type {
-  background-color: #3ba38b;
+  filter: brightness(1.2);
   color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.625rem;
@@ -51,6 +115,32 @@
   max-width: 100%;
   height: 70px;
   align-self: flex-end;
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.pagination button{
+  padding: .25 .5;
+  font-size: .825rem;
+  background-color: #4d2f8f;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+
+}
+
+.pagination button:hover{
+  font-size: 1rem;
+  background-color: #877299;
+
 }
 
 @media screen and (min-width: 380px) {

@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width" , inicial-scale="1.0" />
-  
+
   <head>
     <title>Pokedex</title>
     <!--- Normalize CSS-->
@@ -24,16 +24,15 @@
     <!-- CSS global-->
     <link rel="stylesheet" href="assets/css/global.css" />
     <!--css pokedex-->
-    <link rel="stylesheet" href="assets/css/pokedex.css">
+    <link rel="stylesheet" href="assets/css/pokedex.css" />
   </head>
 
   <body>
     <section class="content">
       <h1>Pokedex</h1>
 
-      <ol class="pokemons">
-
-        <li class="pokemon">
+      <ol id="pokemonList" class="pokemons">
+        <!-- <li class="pokemon">
           <span class="number">#001</span>
           <span class="name">Bulbasaur</span>
           <div class="detail">
@@ -43,12 +42,16 @@
             </ol>
             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="">
           </div>
-        </li>
-      
+        </li> -->
       </ol>
+      <div class="pagination">
+        <button id="loadMore" type="button">Load More...</button>
+      </div>
     </section>
 
     <!-- Import JavaScript-->
+    <script src="assets/javascript/pokemon-model.js"></script>
+    <script src="assets/javascript/poke-api.js"></script>
     <script src="/assets/javascript/main.js"></script>
   </body>
 </html>
