@@ -66,10 +66,6 @@
   background-color: #3956a4;
 }
 
-
-
-
-
 .pokemon {
   display: flex;
   flex-direction: column;
@@ -142,6 +138,17 @@
   background-color: #877299;
 
 }
+.loadDetails {
+  padding: .25 .5;
+  text-align: center;
+  font-size: .825;
+  background-color: #fc66f7;
+  border-radius: 2rem;
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
 
 @media screen and (min-width: 380px) {
   .pokemons {
@@ -160,3 +167,4 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+

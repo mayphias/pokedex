@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="assets/css/global.css" />
     <!--css pokedex-->
     <link rel="stylesheet" href="assets/css/pokedex.css" />
+    <!-- css details -->
+    <link rel="stylesheet" href="assets/css/details.css" />
+
   </head>
 
   <body>
@@ -32,24 +35,19 @@
       <h1>Pokedex</h1>
 
       <ol id="pokemonList" class="pokemons">
-        <!-- <li class="pokemon">
-          <span class="number">#001</span>
-          <span class="name">Bulbasaur</span>
-          <div class="detail">
-            <ol class="types">
-              <li class="type">Grass</li>
-              <li class="type">Poison</li>
-            </ol>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="">
-          </div>
-        </li> -->
+         <!--Script LI pokemon  -->
       </ol>
       <div class="pagination">
-        <button id="loadMore" type="button">Load More...</button>
+        <button id="loadMore" type="button" onclick="loadMoreButton">Load More...</button>
+      </div>
+      <div class="back">
+      <button action="backPokedex" id="backPokedex" onclick="backPokedex()" 
+           class="backButton">Home</button>
       </div>
     </section>
 
     <!-- Import JavaScript-->
+    <script src="assets/javascript/details-model.js"></script>
     <script src="assets/javascript/pokemon-model.js"></script>
     <script src="assets/javascript/poke-api.js"></script>
     <script src="/assets/javascript/main.js"></script>

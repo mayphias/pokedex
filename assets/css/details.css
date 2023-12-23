@@ -1,0 +1,82 @@
+.pokemon-stats-list {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.pokemon-stats-list img {
+    background-color: rgb(233, 255, 255);
+    border-radius: 2rem;
+    height: 100px;
+}
+
+.pokemon-Stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 230px;
+}
+
+.pokemon-stats-abilities {
+  display: grid;
+  grid-column-start: 1;
+  align-items: center;
+  text-align: left;
+  height: 80px;
+  background-color: rgb(253, 238, 238);
+  border-radius: 2rem;
+}
+
+.pokemon-stats-moves {
+  background-color: rgb(241, 241, 255);
+  border-radius: 2rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+}
+
+.pokemon-stats-name {
+  background-color: rgb(241, 241, 241);
+  border-radius: 1rem;
+  text-align: center;
+  height: 25px
+}
+
+.type{
+    padding-top: 3px;
+    border: 0.1rem rgb(207, 207, 207) solid;
+    border-radius: 2rem;
+}
+
+.backButton{
+    padding: .25 .5;
+  font-size: .825rem;
+  background-color: #4d2f8f;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 380px) {
+  .pokemon-stats-moves {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 576px) {
+
+  .pokemon-stats-moves {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .pokemon-stats-moves {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
